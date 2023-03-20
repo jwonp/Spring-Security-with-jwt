@@ -7,10 +7,10 @@ spring:
             ddl-auto: update
         show-sql: true
     datasource:
-        driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://localhost:3306/spring?serverTimezone=Asia/Seoul
-        username: root
-        password: qwerty
+        driver-class-name: ${PROD_DB_DRIVER_CLASS_NAME}
+        url: ${PROD_DB_URL}
+        username: ${PROD_DB_USER_NAME} 
+        password: ${PROD_DB_PASSWORD}
 
 server:
     servlet:
@@ -19,5 +19,5 @@ server:
 
 jwt:
     token:
-        secret: "secretKey-mysecretKey-is-good"
+        secret: ${JWT_TOKEN_SECRET}
       
