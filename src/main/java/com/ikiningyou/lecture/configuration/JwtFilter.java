@@ -2,12 +2,8 @@ package com.ikiningyou.lecture.configuration;
 
 import com.ikiningyou.lecture.service.UserService;
 import com.ikiningyou.lecture.utils.JwtUtil;
-import io.jsonwebtoken.Jwt;
-import io.jsonwebtoken.Jwts;
 import java.io.IOException;
-import java.util.Date;
 import java.util.List;
-import java.util.logging.Logger;
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
